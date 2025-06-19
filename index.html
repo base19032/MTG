@@ -27,7 +27,7 @@
       font-size: 1.5em;
       margin-bottom: 2em;
     }
-    .donate-button {
+    .donate-button, .form-button {
       background-color: #d9272e;
       color: white;
       padding: 1em 2em;
@@ -44,17 +44,12 @@
       margin: 2em auto;
       max-width: 400px;
     }
-    input, button {
+    input {
       width: 100%;
       padding: 0.7em;
       margin: 0.5em 0;
       border: none;
       border-radius: 5px;
-    }
-    button {
-      background-color: #d9272e;
-      color: white;
-      font-weight: bold;
     }
     details {
       background: rgba(255, 255, 255, 0.1);
@@ -74,34 +69,55 @@
   <div class="overlay">
     <h1>The Truth Is Being Censored.</h1>
     <h2>
-
-Because I’ve taken a bold stand for peace and America First, the radical left and GOP war hawks are trying to silence me with lies and labels. They’ve already raised MILLIONS to try and take me down.
-
-Thank you for your help. I can’t fight back without you. 
-</h2>
+      Because I’ve taken a bold stand for peace and America First, the radical left and GOP war hawks are trying to silence me with lies and labels. They’ve already raised MILLIONS to try and take me down.
+      <br><br>
+      Thank you for your help. I can’t fight back without you.
+    </h2>
 
     <a class="donate-button" href="https://secure.winred.com/marjorie-greene-for-congress/mtg_don_be_er_sur-se_rs_20250513?recurring=true" target="_blank">Donate Now</a>
 
     <!-- Pledge Form -->
-    <form method="POST" action="https://script.google.com/macros/s/AKfycbziIbchEiIQnAK34eWh0rXjsvUaUUi-VNxMd3ufQntjczlGhwzJP9W4hxc6eU6aq9w/exec">
+    <form>
       <h3>Not ready yet?<br>Pick a date and amount for a one-time reminder.</h3>
       <input name="Name" type="text" placeholder="Your Name" required />
       <input name="Email" type="email" placeholder="Your Email" required />
       <input name="Date" type="date" required />
       <input name="Amount" type="number" placeholder="Amount ($)" required />
-      <button type="submit">Submit Pledge</button>
+      <a class="form-button" href="https://secure.winred.com/marjorie-greene-for-congress/mtg_don_be_er_sur-se_rs_20250513?recurring=true" target="_blank">Submit Pledge</a>
+    </form>
+
+    <!-- Quick Poll -->
+    <form>
+      <h3>QUICK POLL:</h3>
+      <p>Do you agree with me that America should support the people of Israel without being dragged into another endless war in the Middle East?</p>
+
+      <label>
+        <input type="radio" name="poll_response" value="Yes - I support Israel, but we must put America First." required />
+        ✅ Yes - I support Israel, but we must put America First.
+      </label><br><br>
+
+      <label>
+        <input type="radio" name="poll_response" value="No - I believe we must back Israel unconditionally, even if it means war with Iran." />
+        ❌ No - I believe we must back Israel's government unconditionally, even if it means war with Iran.
+      </label><br><br>
+
+      <label>
+        <input type="radio" name="poll_response" value="Undecided - I want to hear more." />
+        🤔 I'm undecided, but I want to hear more.
+      </label><br><br>
+
+      <input type="email" name="Email" placeholder="Your Email (optional)" />
+      <a class="form-button" href="https://secure.winred.com/marjorie-greene-for-congress/mtg_don_be_er_sur-se_rs_20250513?recurring=true" target="_blank">Submit Response</a>
     </form>
 
     <!-- Unsubscribe Form -->
-    <form method="GET" action="https://script.google.com/macros/s/AKfycby-zq9LqY4nenBZlU1nC8iv7LO66ELrCYWE36ReMb24-gndrTwk4aMYEIMhEkLpHcfd/exec">
+    <form>
       <h3>Unsubscribe</h3>
       <input name="email" type="email" placeholder="Enter your email to unsubscribe" required />
-      <button type="submit">Unsubscribe</button>
+      <a class="form-button" href="https://secure.winred.com/marjorie-greene-for-congress/mtg_don_be_er_sur-se_rs_20250513?recurring=true" target="_blank">Unsubscribe</a>
     </form>
 
     <!-- FAQ Section -->
-  
-
     <details>
       <summary>How do I unsubscribe from emails?</summary>
       <p>Enter your email address above in the Unsubscribe form and you will be removed from future messages.</p>

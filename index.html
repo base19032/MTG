@@ -83,11 +83,20 @@
       <a class="form-button" href="https://secure.winred.com/marjorie-greene-for-congress/mtg_don_be_er_sur-se_rs_20250513?recurring=true" target="_blank">Submit Pledge</a>
     </form>
 
-    <!-- Unsubscribe Form -->
-    <form>
-      <h3>Unsubscribe</h3>
-      <input name="email" type="email" placeholder="Enter your email to unsubscribe" required />
-      <a class="form-button" href="https://secure.winred.com/marjorie-greene-for-congress/mtg_don_be_er_sur-se_rs_20250513?recurring=true" target="_blank">Unsubscribe</a>
+     <!-- Unsubscribe form -->
+    <form action="https://script.google.com/macros/s/AKfycbys5cpo7SX5T5Ru0emmr9FN6iBv2RmL2ZRHDJM0LRNr3x2EqUS8MdXAztThWx_B7N0x/exec" method="GET" class="unsubscribe-form">
+      <h3>Thinking of unsubscribing?</h3>
+      <p>We get it—your inbox is busy. But staying with us means you’ll hear key updates about our fight for. We’ll only send a few messages to inspire your one-time gift.</p>
+
+      <label for="email">Your Email:</label>
+      <input type="email" name="email" required>
+
+      <label>
+        <input type="checkbox" name="unsubscribe" value="true" required>
+        I no longer want to receive campaign emails
+      </label><br>
+
+      <button type="submit">Unsubscribe</button>
     </form>
 
     <!-- FAQ Section -->
